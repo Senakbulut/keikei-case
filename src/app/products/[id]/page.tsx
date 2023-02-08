@@ -37,8 +37,7 @@ function Detail({ params }: Product) {
     (typeof window !== "undefined" &&
       JSON.parse(
         window.localStorage.getItem(JSON.stringify(params.id)) as string
-      )) ||
-      false
+      ))
   );
 
   useEffect(() => {
